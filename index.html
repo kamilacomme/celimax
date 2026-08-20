@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Celimax — Pink Vinyl Edition</title>
+<meta name="viewport" content="width=1440">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:opsz,wdth,wght@5..1200,87.5..112.5,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Libre Caslon Condensed';src:url('./assets/celimax/LibreCaslonCondensed-SemiBold.otf') format('opentype');font-weight:600;font-style:normal;font-display:swap;}
+  @keyframes cxFloatA{0%{transform:translate3d(0,0,0) rotate(0deg);}25%{transform:translate3d(6px,-7px,0) rotate(2.4deg);}50%{transform:translate3d(10px,-3px,0) rotate(-1.4deg);}75%{transform:translate3d(3px,-8px,0) rotate(2.8deg);}100%{transform:translate3d(0,0,0) rotate(0deg);}}
+  @keyframes cxFloatB{0%{transform:translate3d(0,0,0) rotate(0deg);}25%{transform:translate3d(-7px,-6px,0) rotate(-2.6deg);}50%{transform:translate3d(-3px,-10px,0) rotate(2deg);}75%{transform:translate3d(-9px,-4px,0) rotate(-3.2deg);}100%{transform:translate3d(0,0,0) rotate(0deg);}}
+  @media (prefers-reduced-motion: reduce){[data-float]{animation:none !important;}}
+  body{margin:0;background:#FFFFFF;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#1A1919;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+  *{box-sizing:border-box;}
+  p{text-wrap:pretty;}
+  a{color:#1A1919;text-decoration:none;}
+  a:hover{color:rgba(26,25,25,0.72);}
+  :focus-visible{outline:2px solid #1A1919;outline-offset:3px;}
+  [data-reveal]{transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+  [data-reveal]:not([data-in]){opacity:0;transform:translateY(28px);}
+  @keyframes cx-spin{to{transform:rotate(360deg)}}
+  .cx-spin{animation:cx-spin 9s linear infinite;}
+  @media (prefers-reduced-motion:reduce){.cx-spin{animation:none!important;}}
+  @keyframes cx-marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(calc(-50% - 60px),0,0)}}
+  .cx-mq{display:flex;align-items:flex-start;gap:120px;width:max-content;animation:cx-marquee 46s linear infinite;will-change:transform;}
+  @media (prefers-reduced-motion:reduce){
+    [data-reveal]:not([data-in]){opacity:1!important;transform:none!important;transition:none!important;}
+    .cx-mq{animation:none!important;}
+  }
+</style>
+</helmet>
+
+<div data-cx-holder style="position:relative;width:100%;overflow:clip;">
+<div data-cx-canvas style="width:1440px;margin:0 auto;padding:16px 50px 0;position:relative;overflow-x:clip;transform-origin:top left;">
+<sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+
+  <a href="#main" style="position:absolute;left:24px;top:-60px;background:#1A1919;color:#fff;padding:10px 16px;border-radius:8px;font-size:16px;z-index:50;" style-focus="top:24px;">Skip to content</a>
+
+  <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ false }}">
+    <div aria-hidden="true" style="position:absolute;left:50px;right:50px;top:0;bottom:0;display:grid;grid-template-columns:repeat(6,1fr);gap:20px;pointer-events:none;z-index:999;mix-blend-mode:multiply;">
+      <div style="background:rgba(255,0,0,0.14);box-shadow:inset 1px 0 0 rgba(255,0,0,0.55),inset -1px 0 0 rgba(255,0,0,0.55);"></div>
+      <div style="background:rgba(255,0,0,0.14);box-shadow:inset 1px 0 0 rgba(255,0,0,0.55),inset -1px 0 0 rgba(255,0,0,0.55);"></div>
+      <div style="background:rgba(255,0,0,0.14);box-shadow:inset 1px 0 0 rgba(255,0,0,0.55),inset -1px 0 0 rgba(255,0,0,0.55);"></div>
+      <div style="background:rgba(255,0,0,0.14);box-shadow:inset 1px 0 0 rgba(255,0,0,0.55),inset -1px 0 0 rgba(255,0,0,0.55);"></div>
+      <div style="background:rgba(255,0,0,0.14);box-shadow:inset 1px 0 0 rgba(255,0,0,0.55),inset -1px 0 0 rgba(255,0,0,0.55);"></div>
+      <div style="background:rgba(255,0,0,0.14);box-shadow:inset 1px 0 0 rgba(255,0,0,0.55),inset -1px 0 0 rgba(255,0,0,0.55);"></div>
+    </div>
+  </sc-if>
+
+  <header style="position:relative;margin:0 -34px;height:694px;border-radius:10px;overflow:hidden;background:#2A1017;-webkit-mask-image:-webkit-radial-gradient(#FFFFFF,#000000);isolation:isolate;">
+    <div data-parallax="0.08" style="position:absolute;left:0;top:-60px;right:0;height:814px;"><div data-hero-zoom style="width:100%;height:100%;background:url(./assets/celimax/hero.webp) center / cover no-repeat;transform:scale(1.06);transition:transform .9s cubic-bezier(.16,1,.3,1);will-change:transform;"></div></div>
+    <div style="position:relative;height:100%;display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;padding:32px 34px;">
+      <nav aria-label="Main" style="display:flex;flex-direction:row;gap:40px;align-items:center;height:28px;">
+        <a href="https://kamilacomme.github.io/" style="font-family:Inter,sans-serif;font-weight:500;font-size:20px;line-height:1.4;letter-spacing:-0.008em;color:#FFFFFF;white-space:nowrap;text-shadow:0 1px 12px rgba(0,0,0,0.35);" style-hover="color:#FFFFFF;opacity:0.7;">Shop</a>
+        <a href="https://kamilacomme.github.io/" style="font-family:Inter,sans-serif;font-weight:500;font-size:20px;line-height:1.4;letter-spacing:-0.008em;color:#FFFFFF;white-space:nowrap;text-shadow:0 1px 12px rgba(0,0,0,0.35);" style-hover="color:#FFFFFF;opacity:0.7;">About</a>
+        <a href="https://kamilacomme.github.io/" style="font-family:Inter,sans-serif;font-weight:500;font-size:20px;line-height:1.4;letter-spacing:-0.008em;color:#FFFFFF;white-space:nowrap;text-shadow:0 1px 12px rgba(0,0,0,0.35);" style-hover="color:#FFFFFF;opacity:0.7;">Contact</a>
+      </nav>
+      <div style="width:660px;height:630px;border-radius:8px;background:#FBFBFB;padding:32px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;">
+        <div style="display:flex;flex-direction:column;gap:16px;align-self:stretch;">
+          <h1 style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Turn up the glow. The Pink Vinyl Edition.</h1>
+          <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:26px;line-height:1.4;letter-spacing:-1.2px;color:#1A1919;">Experience the limited remix of our best-selling body pads. Pressed once, then gone for good.</p>
+        </div>
+        <a href="https://kamilacomme.github.io/" aria-label="Shop the drop" onMouseEnter="{{ btnIn0 }}" onMouseLeave="{{ btnOut0 }}" style="display:flex;flex-direction:row;align-items:center;height:51.72px;text-decoration:none;">
+          <span style="display:flex;align-items:center;justify-content:center;height:51.72px;padding:11.86px 17.79px;border-radius:118.6px;background:#1A1919;font-family:Inter,sans-serif;font-weight:500;font-size:20px;line-height:1.4;letter-spacing:-1.2px;color:#FFFFFF;text-transform:uppercase;white-space:nowrap;">Shop the drop</span>
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:51.72px;height:51.72px;margin-left:-5.93px;border-radius:105.18px;background:#1A1919;">
+            <sc-if value="{{ hoverBtn0 }}" hint-placeholder-val="{{ false }}"><svg width="18.99" height="22.246" viewBox="0 0 18.99 22.246" aria-hidden="true"><g fill="#FFFFFF"><rect x="2.2" y="1.6" width="5.6" height="19" rx="2.2"></rect><rect x="11.2" y="1.6" width="5.6" height="19" rx="2.2"></rect></g></svg></sc-if><sc-if value="{{ idleBtn0 }}" hint-placeholder-val="{{ true }}"><svg data-play width="18.99" height="22.246" viewBox="0 0 18.990 22.246" fill="none" aria-hidden="true" style="transform:translateX(2.5px);"><path d="M 0 18.148 L 0 4.157 C 0 2.323 1.997 1.186 3.574 2.123 L 15.518 9.219 C 17.072 10.142 17.058 12.397 15.492 13.301 L 3.549 20.197 C 1.971 21.108 0 19.969 0 18.148 Z" fill="#FFFFFF"></path></svg></sc-if>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section style="margin-top:128px;">
+    <div style="position:relative;width:1340px;">
+      <h2 data-line-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;text-indent:226.667px;">Our best-selling brightening body <span style="white-space:nowrap;">pads <span aria-hidden="true" style="position:relative;display:inline-block;width:106.26px;height:0;vertical-align:baseline;"><span data-parallax="0.06" style="position:absolute;left:0;bottom:-18px;width:106.26px;height:103.11px;"><span data-float style="display:block;width:100%;height:100%;background:url(./assets/celimax/31f33a0cd07bf4a4.webp) 99.504% 41.899% / 235.849% 124.861% no-repeat;animation:cxFloatA 6.5s ease-in-out infinite;will-change:transform;"></span></span></span></span> now come in a retro turntable case. Smooth, exfoliate, and turn up <span style="white-space:nowrap;">your <span aria-hidden="true" style="position:relative;display:inline-block;width:71.318px;height:0;vertical-align:baseline;"><span data-parallax="-0.05" style="position:absolute;left:9px;bottom:-34px;width:71.318px;height:102.68px;"><span data-float style="display:block;width:100%;height:100%;background:url(./assets/celimax/31f33a0cd07bf4a4.webp) 14.297% 23.077% / 351.406% 125.384% no-repeat;animation:cxFloatB 7.8s ease-in-out infinite;animation-delay:-2.4s;will-change:transform;"></span></span></span></span> skin's natural glow.</h2>
+    </div>
+  </section>
+
+  <section id="ingredients" style="position:relative;margin-top:128px;">
+    <div style="position:relative;margin:0 -34px;height:694.432px;border-radius:8px;background:#F9E6E8;padding:32px 34px;display:flex;flex-direction:column;gap:32px;overflow:hidden;">
+      <h2 data-reveal style="width:660px;margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Turn up the glow.<br>Pink Vinyl Edition.</h2>
+      <ul style="list-style:none;margin:0;padding:0;width:660px;display:flex;flex-direction:column;gap:12px;">
+        <li style="height:127.477px;border-radius:4px;background:#FFFFFF;padding:24px;display:flex;align-items:center;justify-content:center;">
+          <div style="width:606px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+            <div style="display:flex;flex-direction:row;gap:27px;align-items:center;flex:none;">
+              <div role="img" aria-label="Celimax turntable case with pads" style="width:74.4px;height:79.477px;border-radius:4px;background:url(./assets/celimax/6037d06a1d99aca7-sm.webp) center / cover no-repeat, url(./assets/celimax/fd8b09f6fedf70fc.webp) 0% 19.828% / 233.679% 108.771% no-repeat, url(./assets/celimax/13159adf6d4c06d1.webp) 90.051% 72.154% / 233.747% 123.083% no-repeat, linear-gradient(#F9E6E8,#F9E6E8);"></div>
+              <div>
+                <h3 style="margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">BHA</h3>
+                <p style="margin:8px 0 0;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">Smooths out rough texture.</p>
+              </div>
+            </div>
+            <svg width="34.065" height="34.065" viewBox="0 0 34.065 34.065" aria-hidden="true"><g fill="rgba(26,25,25,0.72)"><circle cx="7.097" cy="17.032" r="2.9"></circle><circle cx="17.032" cy="17.032" r="2.9"></circle><circle cx="26.968" cy="17.032" r="2.9"></circle></g></svg>
+          </div>
+        </li>
+        <li style="height:127.477px;border-radius:4px;background:#FFFFFF;padding:24px;display:flex;align-items:center;justify-content:center;">
+          <div style="width:606px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+            <div style="display:flex;flex-direction:row;gap:27px;align-items:center;flex:none;">
+              <div role="img" aria-label="Vintage microphone prop" style="width:74.4px;height:79.477px;border-radius:4px;background:url(./assets/celimax/58f582cc070cd500.webp) 62.209% -0.442% / 152.62% 356.085% no-repeat, linear-gradient(#F9E6E8,#F9E6E8);"></div>
+              <div>
+                <h3 style="margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Heartleaf</h3>
+                <p style="margin:8px 0 0;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">Calms irritation.</p>
+              </div>
+            </div>
+            <svg width="23.775" height="21.397" viewBox="0 0 23.775 21.397" aria-hidden="true"><path d="M 17.47 0 C 15.04 0 12.942 1.423 11.887 3.498 C 10.833 1.423 8.735 0 6.305 0 C 2.822 0 0 2.921 0 6.515 C 0 10.11 2.16 13.405 4.951 16.112 C 7.742 18.819 11.887 21.397 11.887 21.397 C 11.887 21.397 15.898 18.862 18.823 16.112 C 21.944 13.181 23.775 10.121 23.775 6.515 C 23.775 2.91 20.953 0 17.47 0 Z" fill="rgba(26,25,25,0.72)"></path></svg>
+          </div>
+        </li>
+        <li style="height:127.477px;border-radius:4px;background:#FFFFFF;padding:24px;display:flex;align-items:center;justify-content:center;">
+          <div style="width:606px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+            <div style="display:flex;flex-direction:row;gap:27px;align-items:center;flex:none;">
+              <div role="img" aria-label="Studio spotlight prop" style="width:74.4px;height:79.477px;border-radius:4px;background:url(./assets/celimax/ab447187295e3835-sm.webp) 44.087% 58.283% / 95.412% 95.428% no-repeat, linear-gradient(#F9E6E8,#F9E6E8);"></div>
+              <div>
+                <h3 style="margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Niacinamide</h3>
+                <p style="margin:8px 0 0;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">Brightens dark spots.</p>
+              </div>
+            </div>
+            <svg width="34.065" height="34.065" viewBox="0 0 34.065 34.065" aria-hidden="true"><g fill="rgba(26,25,25,0.72)"><circle cx="7.097" cy="17.032" r="2.9"></circle><circle cx="17.032" cy="17.032" r="2.9"></circle><circle cx="26.968" cy="17.032" r="2.9"></circle></g></svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div aria-hidden="true" data-parallax="-0.07" style="position:absolute;left:754.408px;top:-88.348px;width:847.09px;height:853.308px;pointer-events:none;"><div class="cx-spin" style="position:absolute;left:11px;top:27.65px;width:804px;height:804px;background:url(./assets/celimax/vinyl-disc.webp) center / contain no-repeat;"></div></div>
+  </section>
+
+  <section id="the-setup" style="margin-top:128px;display:flex;flex-direction:column;gap:20px;">
+    <div style="display:flex;flex-direction:row;gap:20px;align-items:flex-start;">
+      <div style="width:433px;display:flex;flex-direction:column;gap:16px;">
+        <h2 data-line-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">The Setup</h2>
+        <p data-reveal style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">We’ve remastered our packaging to elevate your daily routine. Every element is thoughtfully designed for your ultimate convenience.</p>
+      </div>
+      <div data-reveal style="position:relative;width:433.187px;height:360.635px;border-radius:8px;background:#FBF8F5;padding:32px;overflow:hidden;transition:transform .5s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.012);">
+        <h3 style="position:relative;z-index:1;width:373.853px;margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">One-touch play. Double-check lid prevents leaks.</h3>
+        <div aria-hidden="true" style="position:absolute;left:-0.373px;top:117.201px;width:433.933px;height:243.434px;border-radius:8px;background:url(./assets/celimax/f4bf3cc7d28f910f-sm.webp) 133.315% 49.999% / 96.886% 100.046% no-repeat;"></div>
+      </div>
+      <div data-reveal style="position:relative;width:433px;height:361px;border-radius:8px;background:#F9E6E8;padding:32px;overflow:hidden;transition:transform .5s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.012);">
+        <h3 style="position:relative;z-index:1;width:373.853px;margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">Hygienic pick. Built-in tweezers, no fingers needed.</h3>
+        <div aria-hidden="true" style="position:absolute;left:0.094px;top:148.635px;width:433px;height:212px;overflow:hidden;">
+          <div style="position:absolute;left:0;top:0;width:432px;height:212px;border-radius:8px;background:url(./assets/celimax/f51c119fd2bb3796.webp) 0.119% 0% / 100.232% 100.559% no-repeat;"></div>
+          <div style="position:absolute;left:345.105px;top:30.032px;width:87.895px;height:81.191px;border-radius:20px;background:url(./assets/celimax/000ea935ff25bfd4.webp) 100% 23.604% / 492.636% 261.925% no-repeat;"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+      <div data-reveal style="position:relative;width:432px;height:277px;border-radius:8px;background:#F9E6E8;padding:32px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;transition:transform .5s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.012);">
+        <div aria-hidden="true" style="position:absolute;left:63.95px;top:-28.9px;width:340px;height:340px;background:url(./assets/celimax/vinyl-disc.webp) center / contain no-repeat;"></div>
+        <a href="https://kamilacomme.github.io/" aria-label="Shop the drop" onMouseEnter="{{ btnIn1 }}" onMouseLeave="{{ btnOut1 }}" style="position:relative;z-index:1;display:flex;flex-direction:row;align-items:center;height:51.72px;text-decoration:none;">
+          <span style="display:flex;align-items:center;justify-content:center;height:51.72px;padding:11.86px 17.79px;border-radius:118.6px;background:#1A1919;font-family:Inter,sans-serif;font-weight:500;font-size:20px;line-height:1.4;letter-spacing:-1.2px;color:#FFFFFF;text-transform:uppercase;white-space:nowrap;">Shop the drop</span>
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:51.72px;height:51.72px;margin-left:-5.93px;border-radius:105.18px;background:#1A1919;">
+            <sc-if value="{{ hoverBtn1 }}" hint-placeholder-val="{{ false }}"><svg width="18.99" height="22.246" viewBox="0 0 18.99 22.246" aria-hidden="true"><g fill="#FFFFFF"><rect x="2.2" y="1.6" width="5.6" height="19" rx="2.2"></rect><rect x="11.2" y="1.6" width="5.6" height="19" rx="2.2"></rect></g></svg></sc-if><sc-if value="{{ idleBtn1 }}" hint-placeholder-val="{{ true }}"><svg data-play width="18.99" height="22.246" viewBox="0 0 18.990 22.246" fill="none" aria-hidden="true" style="transform:translateX(2.5px);"><path d="M 0 18.148 L 0 4.157 C 0 2.323 1.997 1.186 3.574 2.123 L 15.518 9.219 C 17.072 10.142 17.058 12.397 15.492 13.301 L 3.549 20.197 C 1.971 21.108 0 19.969 0 18.148 Z" fill="#FFFFFF"></path></svg></sc-if>
+          </span>
+        </a>
+      </div>
+      <div data-reveal style="position:relative;width:887px;height:277px;border-radius:8px;background:#FBF8F5;padding:32px;display:flex;flex-direction:row;justify-content:flex-end;align-items:center;overflow:hidden;transition:transform .5s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.012);">
+        <div aria-hidden="true" style="position:absolute;left:23.128px;top:14px;width:513.851px;height:263px;background:url(./assets/celimax/limited-design.webp) center / cover no-repeat;"></div>
+        <h3 style="position:relative;z-index:1;width:246.066px;margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">Limited design.<br>Pink vinyl version.</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="margin-top:128px;display:flex;flex-direction:column;gap:56px;align-items:center;">
+    <div style="width:500px;display:flex;flex-direction:column;gap:16px;align-items:center;">
+      <h2 data-reveal style="margin:0;align-self:stretch;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;text-align:center;">Fan club reviews</h2>
+      <p data-reveal style="margin:0;align-self:stretch;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);text-align:center;">Don't just take our word for it, listen to the crowd.<br>See real results and reviews from our loyal fan club.</p>
+    </div>
+    <div style="display:flex;flex-direction:row;gap:20px;align-items:center;align-self:stretch;">
+      <figure data-reveal style="margin:0;width:433.33px;height:376px;border-radius:8px;background:#F9E6E8;padding:32px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;">
+        <blockquote style="margin:0;align-self:stretch;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">"The packaging is iconic! Looks like a mini turntable. And my elbows have never been smoother."</blockquote>
+        <div style="display:flex;flex-direction:column;gap:24px;align-items:flex-start;align-self:stretch;">
+          <div style="display:flex;flex-direction:row;gap:8px;align-items:center;">
+            <svg width="165.5" height="33.095" viewBox="0 0 120 24" aria-hidden="true"><defs><linearGradient id="cx-r49" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="120" y2="0"><stop offset="92%" stop-color="#1A1919"></stop><stop offset="92%" stop-color="#F9E6E8"></stop></linearGradient></defs><g fill="url(#cx-r49)" stroke="url(#cx-r49)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L12 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M36 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L36 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M60 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L60 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M84 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L84 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M108 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L108 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path></g></svg>
+            <span style="font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">4.9</span>
+          </div>
+          <figcaption style="display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;align-self:stretch;">
+            <div style="display:flex;flex-direction:column;">
+              <span style="font-family:Inter,sans-serif;font-weight:700;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:#1A1919;white-space:nowrap;">@GlowGirl_99</span>
+              <span style="font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">20 y.o, dehydrated skin</span>
+            </div>
+            <div aria-hidden="true" style="width:70.875px;height:69.785px;border-radius:8px;background:url(./assets/celimax/86106d1a70543057.webp) center / cover no-repeat;"></div>
+          </figcaption>
+        </div>
+      </figure>
+      <div data-reveal style="width:280px;height:376px;border-radius:8px;overflow:hidden;"><div role="img" aria-label="Model holding the Pink Vinyl Edition case" style="width:100%;height:100%;background:url(./assets/celimax/1fe13e832fbbde3c-sm.webp) center / cover no-repeat;transition:transform 1.1s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.07);"></div></div>
+      <figure data-reveal style="margin:0;width:586.67px;height:376px;border-radius:8px;background:#F9E6E8;padding:32px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;">
+        <blockquote style="margin:0;align-self:stretch;font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">"Finally, a body pad that doesn't dry me out. The tweezers are a game changer! So hygienic."</blockquote>
+        <div style="display:flex;flex-direction:column;gap:24px;align-items:flex-start;align-self:stretch;">
+          <div style="display:flex;flex-direction:row;gap:8px;align-items:center;">
+            <svg width="165.5" height="33.095" viewBox="0 0 120 24" aria-hidden="true"><g fill="#1A1919" stroke="#1A1919" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L12 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M36 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L36 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M60 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L60 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M84 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L84 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M108 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L108 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path></g></svg>
+            <span style="font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">5.0</span>
+          </div>
+          <figcaption style="display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;align-self:stretch;">
+            <div style="display:flex;flex-direction:column;">
+              <span style="font-family:Inter,sans-serif;font-weight:700;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:#1A1919;white-space:nowrap;">@Skincare_DJ</span>
+              <span style="font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">18 y.o, dry skin</span>
+            </div>
+            <div aria-hidden="true" style="width:70.875px;height:69.785px;border-radius:8px;background:url(./assets/celimax/86106d1a70543057.webp) center / cover no-repeat;"></div>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="studio-qa" style="margin:128px -34px 0;border-radius:8px;background:#FBF8F5;padding:32px 34px;display:flex;flex-direction:column;gap:48px;">
+    <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;">
+      <div style="width:433.333px;display:flex;flex-direction:column;gap:16px;">
+        <h2 data-line-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Studio Q<span style="font-family:Georgia,'Times New Roman',serif;font-variation-settings:normal;">&amp;</span>A</h2>
+        <p data-reveal style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Got questions before you hit play? We've got the answers. Check out the liner notes for this limited release.</p>
+      </div>
+      <div style="width:886.667px;display:flex;flex-direction:column;gap:16px;">
+
+        <div style="border-radius:10px;background:#FFFFFF;padding:32px;display:flex;flex-direction:column;gap:8px;">
+          <button type="button" onClick="{{ toggle0 }}" aria-expanded="{{ open0 }}" aria-controls="cx-a0" style="all:unset;cursor:pointer;width:100%;flex:none;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:24px;">
+            <span style="font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;white-space:nowrap;">Is it safe for sensitive skin?</span>
+            <span aria-hidden="true" style="flex:none;display:flex;align-items:center;justify-content:center;width:51.703px;height:51.703px;border-radius:25.851px;background:#F9E6E8;transition:transform .45s cubic-bezier(.16,1,.3,1),background .3s;">
+              <sc-if value="{{ open0 }}" hint-placeholder-val="{{ true }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="0.7" y1="0.7" x2="17.3" y2="17.3"></line><line x1="17.3" y1="0.7" x2="0.7" y2="17.3"></line></g></svg>
+              </sc-if>
+              <sc-if value="{{ closed0 }}" hint-placeholder-val="{{ false }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="9" y1="0.7" x2="9" y2="17.3"></line><line x1="0.7" y1="9" x2="17.3" y2="9"></line></g></svg>
+              </sc-if>
+            </span>
+          </button>
+          <sc-if value="{{ open0 }}" hint-placeholder-val="{{ true }}">
+            <p data-faq-a id="cx-a0" style="margin:0;padding-right:68px;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Yes. The formula is pH-balanced and fragrance-free, and Heartleaf extract calms the skin while the BHA works. The acid sits at a low concentration, so it resurfaces without stripping. If your skin reacts easily, start with two nights a week and build up from there.</p>
+          </sc-if>
+        </div>
+
+        <div style="border-radius:10px;background:#FFFFFF;padding:32px;display:flex;flex-direction:column;gap:8px;">
+          <button type="button" onClick="{{ toggle1 }}" aria-expanded="{{ open1 }}" aria-controls="cx-a1" style="all:unset;cursor:pointer;width:100%;flex:none;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:24px;">
+            <span style="font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;white-space:nowrap;">Can I use this on my face?</span>
+            <span aria-hidden="true" style="flex:none;display:flex;align-items:center;justify-content:center;width:51.703px;height:51.703px;border-radius:25.851px;background:#F9E6E8;transition:transform .45s cubic-bezier(.16,1,.3,1),background .3s;">
+              <sc-if value="{{ open1 }}" hint-placeholder-val="{{ false }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="0.7" y1="0.7" x2="17.3" y2="17.3"></line><line x1="17.3" y1="0.7" x2="0.7" y2="17.3"></line></g></svg>
+              </sc-if>
+              <sc-if value="{{ closed1 }}" hint-placeholder-val="{{ true }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="9" y1="0.7" x2="9" y2="17.3"></line><line x1="0.7" y1="9" x2="17.3" y2="9"></line></g></svg>
+              </sc-if>
+            </span>
+          </button>
+          <sc-if value="{{ open1 }}" hint-placeholder-val="{{ false }}">
+            <p data-faq-a id="cx-a1" style="margin:0;padding-right:68px;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">These pads are made for body skin — arms, legs, back and shoulders — where the barrier is thicker and rough texture builds up. For facial skin, reach for a lower-strength Celimax face exfoliant instead.</p>
+          </sc-if>
+        </div>
+
+        <div style="border-radius:10px;background:#FFFFFF;padding:32px;display:flex;flex-direction:column;gap:8px;">
+          <button type="button" onClick="{{ toggle2 }}" aria-expanded="{{ open2 }}" aria-controls="cx-a2" style="all:unset;cursor:pointer;width:100%;flex:none;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:24px;">
+            <span style="font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;white-space:nowrap;">How many pads come in one container?</span>
+            <span aria-hidden="true" style="flex:none;display:flex;align-items:center;justify-content:center;width:51.703px;height:51.703px;border-radius:25.851px;background:#F9E6E8;transition:transform .45s cubic-bezier(.16,1,.3,1),background .3s;">
+              <sc-if value="{{ open2 }}" hint-placeholder-val="{{ false }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="0.7" y1="0.7" x2="17.3" y2="17.3"></line><line x1="17.3" y1="0.7" x2="0.7" y2="17.3"></line></g></svg>
+              </sc-if>
+              <sc-if value="{{ closed2 }}" hint-placeholder-val="{{ true }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="9" y1="0.7" x2="9" y2="17.3"></line><line x1="0.7" y1="9" x2="17.3" y2="9"></line></g></svg>
+              </sc-if>
+            </span>
+          </button>
+          <sc-if value="{{ open2 }}" hint-placeholder-val="{{ false }}">
+            <p data-faq-a id="cx-a2" style="margin:0;padding-right:68px;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Sixty pads per turntable case — roughly two months of use at two to three times a week. The case is built to be kept: swap in a refill insert and reuse the lid and the tweezers.</p>
+          </sc-if>
+        </div>
+
+        <div style="border-radius:10px;background:#FFFFFF;padding:32px;display:flex;flex-direction:column;gap:8px;">
+          <button type="button" onClick="{{ toggle3 }}" aria-expanded="{{ open3 }}" aria-controls="cx-a3" style="all:unset;cursor:pointer;width:100%;flex:none;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:24px;">
+            <span style="font-family:Inter,sans-serif;font-weight:600;font-size:28px;text-wrap:balance;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;white-space:nowrap;">How often should I use it?</span>
+            <span aria-hidden="true" style="flex:none;display:flex;align-items:center;justify-content:center;width:51.703px;height:51.703px;border-radius:25.851px;background:#F9E6E8;transition:transform .45s cubic-bezier(.16,1,.3,1),background .3s;">
+              <sc-if value="{{ open3 }}" hint-placeholder-val="{{ false }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="0.7" y1="0.7" x2="17.3" y2="17.3"></line><line x1="17.3" y1="0.7" x2="0.7" y2="17.3"></line></g></svg>
+              </sc-if>
+              <sc-if value="{{ closed3 }}" hint-placeholder-val="{{ true }}">
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.4" stroke-linecap="round"><line x1="9" y1="0.7" x2="9" y2="17.3"></line><line x1="0.7" y1="9" x2="17.3" y2="9"></line></g></svg>
+              </sc-if>
+            </span>
+          </button>
+          <sc-if value="{{ open3 }}" hint-placeholder-val="{{ false }}">
+            <p data-faq-a id="cx-a3" style="margin:0;padding-right:68px;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Two to three evenings a week, on clean dry skin. Follow with moisturiser, and wear SPF the next morning — freshly resurfaced skin burns faster.</p>
+          </sc-if>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="press-play" style="position:relative;margin-top:103px;height:596.366px;">
+    <div style="position:relative;z-index:2;display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;">
+      <h2 data-line-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:80px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Press play now</h2>
+      <div data-pp-col style="margin-top:34px;width:431.556px;display:flex;flex-direction:column;gap:24px;align-items:flex-start;">
+        <p data-reveal style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Don't miss out on the ultimate body glow. Secure your limited edition remix and turn up the volume.</p>
+        <a href="https://kamilacomme.github.io/" aria-label="Shop the drop" onMouseEnter="{{ btnIn2 }}" onMouseLeave="{{ btnOut2 }}" style="display:flex;flex-direction:row;align-items:center;height:51.72px;text-decoration:none;">
+          <span style="display:flex;align-items:center;justify-content:center;height:51.72px;padding:11.86px 17.79px;border-radius:118.6px;background:#1A1919;font-family:Inter,sans-serif;font-weight:500;font-size:20px;line-height:1.4;letter-spacing:-1.2px;color:#FFFFFF;text-transform:uppercase;white-space:nowrap;">Shop the drop</span>
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:51.72px;height:51.72px;margin-left:-5.93px;border-radius:105.18px;background:#1A1919;">
+            <sc-if value="{{ hoverBtn2 }}" hint-placeholder-val="{{ false }}"><svg width="18.99" height="22.246" viewBox="0 0 18.99 22.246" aria-hidden="true"><g fill="#FFFFFF"><rect x="2.2" y="1.6" width="5.6" height="19" rx="2.2"></rect><rect x="11.2" y="1.6" width="5.6" height="19" rx="2.2"></rect></g></svg></sc-if><sc-if value="{{ idleBtn2 }}" hint-placeholder-val="{{ true }}"><svg data-play width="18.99" height="22.246" viewBox="0 0 18.990 22.246" fill="none" aria-hidden="true" style="transform:translateX(2.5px);"><path d="M 0 18.148 L 0 4.157 C 0 2.323 1.997 1.186 3.574 2.123 L 15.518 9.219 C 17.072 10.142 17.058 12.397 15.492 13.301 L 3.549 20.197 C 1.971 21.108 0 19.969 0 18.148 Z" fill="#FFFFFF"></path></svg></sc-if>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div aria-hidden="true" style="position:absolute;left:50%;transform:translateX(-50%);top:289.861px;width:1440px;height:306.505px;overflow:hidden;">
+      <div class="cx-mq">
+        <span style="font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:339.48px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Pink Vinyl Edition</span>
+        <span style="font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:339.48px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Pink Vinyl Edition</span>
+      </div>
+    </div>
+    <div aria-hidden="true" style="position:absolute;left:377.699px;top:111.06px;width:584.601px;height:485.306px;overflow:hidden;z-index:3;pointer-events:none;">
+      <div data-parallax="-0.04" style="position:absolute;left:0;top:0;width:427.499px;height:513.089px;transform:translate(0,76.625px) rotate(-3.84deg);transform-origin:0 0;background:url(./assets/celimax/0f7b73ef16fbe8fc-sm.webp) center / cover no-repeat;"></div>
+      <div style="position:absolute;left:257.177px;top:0;width:327.424px;height:816.064px;background:url(./assets/celimax/58f582cc070cd500.webp) center / cover no-repeat;"></div>
+    </div>
+  </section>
+
+  </main>
+</sc-if>
+
+<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+<div data-m style="position:relative;width:100%;background:#FFFFFF;overflow:clip;">
+
+  <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ false }}">
+    <div aria-hidden="true" style="position:absolute;left:16px;right:16px;top:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;pointer-events:none;z-index:999;">
+      <div style="background:rgba(158,26,26,0.10);"></div>
+      <div style="background:rgba(158,26,26,0.10);"></div>
+      <div style="background:rgba(158,26,26,0.10);"></div>
+      <div style="background:rgba(158,26,26,0.10);"></div>
+    </div>
+  </sc-if>
+
+  <header style="position:relative;height:750px;border-radius:8px;overflow:hidden;-webkit-mask-image:-webkit-radial-gradient(#FFFFFF,#000000);isolation:isolate;">
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,#2B0B0C 0%,rgba(0,0,0,0) 24.02%),url(./assets/celimax/hero-mobile.webp) center / cover no-repeat;"></div>
+    <a href="https://kamilacomme.github.io/" aria-label="celimax" style="position:absolute;left:16px;top:24px;display:block;font-family:Inter,sans-serif;font-size:16px;line-height:1.4;"><img src="./assets/celimax/logo-wm.png" alt="celimax" style="display:inline-block;width:80.014px;height:17.05px;vertical-align:baseline;filter:brightness(0) invert(1) drop-shadow(0 1px 10px rgba(0,0,0,0.35));"></a>
+    <nav aria-label="Main" style="position:absolute;right:16px;top:24px;height:22.4px;display:flex;flex-direction:row;gap:32px;align-items:center;">
+      <a href="https://kamilacomme.github.io/" style="font-family:Inter,sans-serif;font-weight:500;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:#FFFFFF;white-space:nowrap;text-shadow:0 1px 12px rgba(0,0,0,0.35);">About</a>
+      <a href="https://kamilacomme.github.io/" style="font-family:Inter,sans-serif;font-weight:500;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:#FFFFFF;white-space:nowrap;text-shadow:0 1px 12px rgba(0,0,0,0.35);">Contact</a>
+    </nav>
+    <div style="position:absolute;left:16px;right:16px;top:70px;border-radius:8px;background:#FBFBFB;padding:24px;display:flex;flex-direction:column;gap:24px;align-items:flex-start;">
+      <div style="display:flex;flex-direction:column;gap:16px;align-self:stretch;">
+        <h1 style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Turn up the glow.<br>The Pink Vinyl Edition.</h1>
+        <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.6px;color:#1A1919;">Experience the limited remix of our best-selling body pads. Pressed once, then gone for good.</p>
+      </div>
+      <a href="https://kamilacomme.github.io/" aria-label="Shop the drop" style="display:flex;flex-direction:row;align-items:center;height:45.72px;text-decoration:none;flex:none;">
+        <span style="display:flex;align-items:center;justify-content:center;height:45.72px;padding:11.86px 17.79px;border-radius:118.6px;background:#1A1919;font-family:Inter,sans-serif;font-weight:500;font-size:16px;line-height:1.4;letter-spacing:-1.186px;color:#FFFFFF;text-transform:uppercase;white-space:nowrap;">Shop the drop</span>
+        <span role="button" tabIndex="0" aria-label="Play preview" onClick="{{ tap0 }}" onKeyDown="{{ tapKey0 }}" style="display:flex;align-items:center;justify-content:center;width:45.72px;height:45.72px;margin-left:-5.93px;border-radius:105.18px;background:#1A1919;">
+          <sc-if value="{{ hoverBtn0 }}" hint-placeholder-val="{{ false }}"><svg width="18.99" height="22.246" viewBox="0 0 18.99 22.246" aria-hidden="true"><g fill="#FFFFFF"><rect x="2.2" y="1.6" width="5.6" height="19" rx="2.2"></rect><rect x="11.2" y="1.6" width="5.6" height="19" rx="2.2"></rect></g></svg></sc-if><sc-if value="{{ idleBtn0 }}" hint-placeholder-val="{{ true }}"><svg width="18.99" height="22.246" viewBox="0 0 18.990 22.246" fill="none" aria-hidden="true" style="transform:translateX(2.5px);"><path d="M 0 18.148 L 0 4.157 C 0 2.323 1.997 1.186 3.574 2.123 L 15.518 9.219 C 17.072 10.142 17.058 12.397 15.492 13.301 L 3.549 20.197 C 1.971 21.108 0 19.969 0 18.148 Z" fill="#FFFFFF"></path></svg></sc-if>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-m">
+
+  <section style="margin:96px 16px 0;">
+    <h2 data-line-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;text-indent:94.25px;">Our best-selling brightening body <span style="white-space:nowrap;">pads <span aria-hidden="true" style="position:relative;display:inline-block;width:49px;height:0;vertical-align:baseline;"><span style="position:absolute;left:0;bottom:-8px;width:48.998px;height:47.546px;"><span data-float style="display:block;width:100%;height:100%;background:url(./assets/celimax/31f33a0cd07bf4a4.webp) 99.504% 41.899% / 235.849% 124.861% no-repeat;animation:cxFloatA 6.5s ease-in-out infinite;will-change:transform;"></span></span></span></span> now come in a retro case. Smooth, exfoliate, and turn up <span style="white-space:nowrap;">your <span aria-hidden="true" style="position:relative;display:inline-block;width:33px;height:0;vertical-align:baseline;"><span style="position:absolute;left:3px;bottom:-14px;width:32.886px;height:47.348px;"><span data-float style="display:block;width:100%;height:100%;background:url(./assets/celimax/31f33a0cd07bf4a4.webp) 14.297% 23.077% / 351.406% 125.384% no-repeat;animation:cxFloatB 7.8s ease-in-out infinite;animation-delay:-2.4s;will-change:transform;"></span></span></span></span> skin's glow.</h2>
+  </section>
+
+  <section style="margin-top:96px;border-radius:8px;overflow:hidden;background:#F9E6E8;padding:32px 16px 24px;display:flex;flex-direction:column;gap:24px;">
+    <h2 data-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Turn up the glow.<br>Pink Vinyl Edition.</h2>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;">
+      <li data-reveal style="border-radius:4px;background:#FFFFFF;padding:16px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:16px;">
+        <div style="display:flex;flex-direction:row;gap:16px;align-items:center;">
+          <div role="img" aria-label="Celimax turntable case with pads" style="flex:none;width:61.663px;height:65.871px;border-radius:3.315px;background:url(./assets/celimax/6037d06a1d99aca7-sm.webp) center / cover no-repeat, url(./assets/celimax/fd8b09f6fedf70fc.webp) 0% 19.828% / 233.679% 108.771% no-repeat, url(./assets/celimax/13159adf6d4c06d1.webp) 90.051% 72.154% / 233.747% 123.083% no-repeat, linear-gradient(#F9E6E8,#F9E6E8);"></div>
+          <div style="flex:none;display:flex;flex-direction:column;gap:8px;white-space:nowrap;">
+            <h3 style="margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">BHA</h3>
+            <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Smooths out rough texture.</p>
+          </div>
+        </div>
+        <svg width="22.824" height="22.824" viewBox="0 0 22.824 22.824" aria-hidden="true" style="flex:none;"><g fill="rgba(26,25,25,0.72)"><circle cx="4.755" cy="11.412" r="1.902"></circle><circle cx="11.412" cy="11.412" r="1.902"></circle><circle cx="18.069" cy="11.412" r="1.902"></circle></g></svg>
+      </li>
+      <li data-reveal style="border-radius:4px;background:#FFFFFF;padding:16px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:16px;">
+        <div style="display:flex;flex-direction:row;gap:16px;align-items:center;">
+          <div role="img" aria-label="Vintage microphone prop" style="flex:none;width:61.663px;height:65.871px;border-radius:3.315px;background:url(./assets/celimax/58f582cc070cd500.webp) 62.209% -0.442% / 152.62% 356.085% no-repeat, linear-gradient(#F9E6E8,#F9E6E8);"></div>
+          <div style="flex:none;display:flex;flex-direction:column;gap:8px;white-space:nowrap;">
+            <h3 style="margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">Heartleaf</h3>
+            <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Calms irritation.</p>
+          </div>
+        </div>
+        <svg width="15.929" height="14.336" viewBox="0 0 15.929 14.336" aria-hidden="true" style="flex:none;"><path d="M 11.705 0 C 10.077 0 8.671 0.953 7.965 2.344 C 7.258 0.953 5.852 0 4.224 0 C 1.891 0 0 1.957 0 4.365 C 0 6.774 1.447 8.982 3.317 10.795 C 5.187 12.609 7.965 14.336 7.965 14.336 C 7.965 14.336 10.652 12.637 12.612 10.795 C 14.703 8.831 15.929 6.781 15.929 4.365 C 15.929 1.95 14.038 0 11.705 0 Z" fill="rgba(26,25,25,0.72)"></path></svg>
+      </li>
+      <li data-reveal style="border-radius:4px;background:#FFFFFF;padding:16px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:16px;">
+        <div style="display:flex;flex-direction:row;gap:16px;align-items:center;">
+          <div role="img" aria-label="Studio spotlight prop" style="flex:none;width:61.663px;height:65.871px;border-radius:3.315px;background:url(./assets/celimax/ab447187295e3835-sm.webp) 44.087% 58.283% / 95.412% 95.428% no-repeat, linear-gradient(#F9E6E8,#F9E6E8);"></div>
+          <div style="flex:none;display:flex;flex-direction:column;gap:8px;white-space:nowrap;">
+            <h3 style="margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">Niacinamide</h3>
+            <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Brightens dark spots.</p>
+          </div>
+        </div>
+        <svg width="22.824" height="22.824" viewBox="0 0 22.824 22.824" aria-hidden="true" style="flex:none;"><g fill="rgba(26,25,25,0.72)"><circle cx="4.755" cy="11.412" r="1.902"></circle><circle cx="11.412" cy="11.412" r="1.902"></circle><circle cx="18.069" cy="11.412" r="1.902"></circle></g></svg>
+      </li>
+    </ul>
+    <div aria-hidden="true" style="position:relative;height:250px;margin:0 -16px -24px;overflow:hidden;">
+      <div class="cx-spin" style="position:absolute;left:50%;top:0;width:440px;height:440px;margin-left:-220px;background:url(./assets/celimax/vinyl-disc.webp) center / contain no-repeat;"></div>
+    </div>
+  </section>
+
+  <section style="margin:96px 16px 0;display:flex;flex-direction:column;gap:24px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <h2 data-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">The Setup</h2>
+      <p data-reveal style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">We’ve remastered our packaging to elevate your daily routine. Every element is thoughtfully designed for your ultimate convenience.</p>
+    </div>
+    <div data-stagger style="display:flex;flex-direction:column;gap:16px;">
+      <div data-reveal style="position:relative;height:305px;border-radius:8px;background:#FBF8F5;padding:24px;overflow:hidden;">
+        <h3 style="position:relative;z-index:1;margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">One-touch play.<br>Double-check lid prevents leaks.</h3>
+        <div aria-hidden="true" style="position:absolute;left:0;right:0;top:102.396px;height:202.604px;border-radius:6.658px;background:url(./assets/celimax/f4bf3cc7d28f910f-sm.webp) 133.315% 49.999% / 96.886% 100.046% no-repeat;"></div>
+      </div>
+      <div data-reveal style="position:relative;height:305px;border-radius:8px;background:#F9E6E8;padding:24px;overflow:hidden;">
+        <h3 style="position:relative;z-index:1;margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Hygienic pick. Built-in tweezers, no fingers needed.</h3>
+        <div aria-hidden="true" style="position:absolute;left:0;right:0;top:128.298px;height:176.702px;overflow:hidden;">
+          <div style="position:absolute;left:0;right:0;top:0;height:176.702px;border-radius:6.668px;background:url(./assets/celimax/f51c119fd2bb3796.webp) 0.119% 0% / 100.232% 100.559% no-repeat;"></div>
+          <div style="position:absolute;right:0;top:25.032px;width:73.26px;height:67.673px;border-radius:16.67px;background:url(./assets/celimax/000ea935ff25bfd4.webp) 100% 23.604% / 492.636% 261.925% no-repeat;"></div>
+        </div>
+      </div>
+      <div data-reveal style="position:relative;height:305px;border-radius:8px;background:#FBF8F5;padding:24px;overflow:hidden;">
+        <h3 style="position:relative;z-index:1;margin:0;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Limited design.<br>Pink vinyl version.</h3>
+        <div aria-hidden="true" style="position:absolute;left:-16.45px;right:-44.5px;top:97.573px;height:215.987px;background:url(./assets/celimax/limited-design.webp) center / cover no-repeat;"></div>
+      </div>
+      <div data-reveal style="position:relative;height:208px;border-radius:8px;background:#F9E6E8;">
+        <div aria-hidden="true" style="position:absolute;left:81.9px;top:-5.3px;width:220px;height:220px;background:url(./assets/celimax/vinyl-disc.webp) center / contain no-repeat;"></div>
+        <a href="https://kamilacomme.github.io/" aria-label="Shop the drop" style="position:absolute;z-index:1;left:25.156px;top:80.113px;display:flex;flex-direction:row;align-items:center;height:45.72px;text-decoration:none;">
+          <span style="display:flex;align-items:center;justify-content:center;height:45.72px;padding:11.86px 17.79px;border-radius:118.6px;background:#1A1919;font-family:Inter,sans-serif;font-weight:500;font-size:16px;line-height:1.4;letter-spacing:-1.186px;color:#FFFFFF;text-transform:uppercase;white-space:nowrap;">Shop the drop</span>
+          <span role="button" tabIndex="0" aria-label="Play preview" onClick="{{ tap1 }}" onKeyDown="{{ tapKey1 }}" style="display:flex;align-items:center;justify-content:center;width:45.72px;height:45.72px;margin-left:-5.93px;border-radius:105.18px;background:#1A1919;">
+            <sc-if value="{{ hoverBtn1 }}" hint-placeholder-val="{{ false }}"><svg width="18.99" height="22.246" viewBox="0 0 18.99 22.246" aria-hidden="true"><g fill="#FFFFFF"><rect x="2.2" y="1.6" width="5.6" height="19" rx="2.2"></rect><rect x="11.2" y="1.6" width="5.6" height="19" rx="2.2"></rect></g></svg></sc-if><sc-if value="{{ idleBtn1 }}" hint-placeholder-val="{{ true }}"><svg width="18.99" height="22.246" viewBox="0 0 18.990 22.246" fill="none" aria-hidden="true" style="transform:translateX(2.5px);"><path d="M 0 18.148 L 0 4.157 C 0 2.323 1.997 1.186 3.574 2.123 L 15.518 9.219 C 17.072 10.142 17.058 12.397 15.492 13.301 L 3.549 20.197 C 1.971 21.108 0 19.969 0 18.148 Z" fill="#FFFFFF"></path></svg></sc-if>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin:96px 16px 0;display:flex;flex-direction:column;gap:24px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <h2 style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Fan club reviews</h2>
+      <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Don't just take our word for it, listen to the crowd. See real results and reviews from our loyal fan club.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <figure style="margin:0;height:317px;border-radius:8px;background:#F9E6E8;padding:24px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;">
+        <blockquote style="margin:0;align-self:stretch;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">"The packaging is iconic! Looks like a mini turntable. And my elbows have never been smoother."</blockquote>
+        <div style="position:relative;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;">
+          <div style="display:flex;flex-direction:row;gap:8px;align-items:center;">
+            <svg width="148.6" height="29.7" viewBox="0 0 120 24" aria-hidden="true"><defs><linearGradient id="cx-m49" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="120" y2="0"><stop offset="92%" stop-color="#1A1919"></stop><stop offset="92%" stop-color="#F9E6E8"></stop></linearGradient></defs><g fill="url(#cx-m49)" stroke="url(#cx-m49)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L12 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M36 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L36 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M60 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L60 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M84 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L84 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M108 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L108 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path></g></svg>
+            <span style="font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">4.9</span>
+          </div>
+          <figcaption style="display:flex;flex-direction:column;">
+            <span style="font-family:Inter,sans-serif;font-weight:700;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:#1A1919;white-space:nowrap;">@GlowGirl_99</span>
+            <span style="font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">20 y.o, dehydrated skin</span>
+          </figcaption>
+          <div aria-hidden="true" style="position:absolute;right:16px;top:42.972px;width:55.672px;height:48.983px;border-radius:6.284px;background:url(./assets/celimax/86106d1a70543057.webp) center / cover no-repeat;"></div>
+        </div>
+      </figure>
+      <div role="img" aria-label="Model holding the Pink Vinyl Edition case" style="height:317px;border-radius:8px;background:url(./assets/celimax/1fe13e832fbbde3c-sm.webp) 50% 72.651% / cover no-repeat;"></div>
+      <figure style="margin:0;height:317px;border-radius:8px;background:#F9E6E8;padding:24px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;">
+        <blockquote style="margin:0;align-self:stretch;font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;">"Finally, a body pad that doesn't dry me out. The tweezers are a game changer! So hygienic."</blockquote>
+        <div style="position:relative;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;">
+          <div style="display:flex;flex-direction:row;gap:8px;align-items:center;">
+            <svg width="148.6" height="29.7" viewBox="0 0 120 24" aria-hidden="true"><g fill="#1A1919" stroke="#1A1919" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L12 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M36 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L36 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M60 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L60 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M84 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L84 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path><path d="M108 3.6l2.4 5.4 5.9.5-4.5 3.9 1.3 5.8L108 16.1l-5.1 3.1 1.3-5.8-4.5-3.9 5.9-.5z"></path></g></svg>
+            <span style="font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">5.0</span>
+          </div>
+          <figcaption style="display:flex;flex-direction:column;">
+            <span style="font-family:Inter,sans-serif;font-weight:700;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:#1A1919;white-space:nowrap;">@Skincare_DJ</span>
+            <span style="font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);white-space:nowrap;">18 y.o, dry skin</span>
+          </figcaption>
+          <div aria-hidden="true" style="position:absolute;right:16px;top:42.972px;width:55.672px;height:48.983px;border-radius:6.284px;background:url(./assets/celimax/86106d1a70543057.webp) center / cover no-repeat;"></div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section style="margin-top:96px;border-radius:8px;background:#FBF8F5;padding:32px 16px;display:flex;flex-direction:column;gap:24px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <h2 data-reveal style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Studio Q<span style="font-family:Georgia,'Times New Roman',serif;font-variation-settings:normal;">&amp;</span>A</h2>
+      <p data-reveal style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Got questions before you hit play? We've got the answers. Check out the liner notes for this limited release.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+
+      <div style="border-radius:10px;background:#FFFFFF;padding:16px;display:flex;flex-direction:column;gap:8px;">
+        <button type="button" onClick="{{ toggle0 }}" aria-expanded="{{ open0 }}" aria-controls="cx-m0" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:41.702px;height:41.702px;border-radius:20.851px;background:#F9E6E8;">
+            <sc-if value="{{ open0 }}" hint-placeholder-val="{{ true }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="0.9" y1="0.9" x2="17.1" y2="17.1"></line><line x1="17.1" y1="0.9" x2="0.9" y2="17.1"></line></g></svg></sc-if>
+            <sc-if value="{{ closed0 }}" hint-placeholder-val="{{ false }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="9" y1="0.9" x2="9" y2="17.1"></line><line x1="0.9" y1="9" x2="17.1" y2="9"></line></g></svg></sc-if>
+          </span>
+          <span style="font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;">Is it safe for sensitive skin?</span>
+        </button>
+        <sc-if value="{{ open0 }}" hint-placeholder-val="{{ true }}">
+          <p id="cx-m0" style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Yes. The formula is pH-balanced and fragrance-free, and Heartleaf extract calms the skin while the BHA works. The acid sits at a low concentration, so it resurfaces without stripping. If your skin reacts easily, start with two nights a week and build up from there.</p>
+        </sc-if>
+      </div>
+
+      <div style="border-radius:10px;background:#FFFFFF;padding:16px;display:flex;flex-direction:column;gap:8px;">
+        <button type="button" onClick="{{ toggle1 }}" aria-expanded="{{ open1 }}" aria-controls="cx-m1" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:41.702px;height:41.702px;border-radius:20.851px;background:#F9E6E8;">
+            <sc-if value="{{ open1 }}" hint-placeholder-val="{{ false }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="0.9" y1="0.9" x2="17.1" y2="17.1"></line><line x1="17.1" y1="0.9" x2="0.9" y2="17.1"></line></g></svg></sc-if>
+            <sc-if value="{{ closed1 }}" hint-placeholder-val="{{ true }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="9" y1="0.9" x2="9" y2="17.1"></line><line x1="0.9" y1="9" x2="17.1" y2="9"></line></g></svg></sc-if>
+          </span>
+          <span style="font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;">Can I use this on my face?</span>
+        </button>
+        <sc-if value="{{ open1 }}" hint-placeholder-val="{{ false }}">
+          <p id="cx-m1" style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">These pads are made for body skin — arms, legs, back and shoulders — where the barrier is thicker and rough texture builds up. For facial skin, reach for a lower-strength Celimax face exfoliant instead.</p>
+        </sc-if>
+      </div>
+
+      <div style="border-radius:10px;background:#FFFFFF;padding:16px;display:flex;flex-direction:column;gap:8px;">
+        <button type="button" onClick="{{ toggle2 }}" aria-expanded="{{ open2 }}" aria-controls="cx-m2" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:41.702px;height:41.702px;border-radius:20.851px;background:#F9E6E8;">
+            <sc-if value="{{ open2 }}" hint-placeholder-val="{{ false }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="0.9" y1="0.9" x2="17.1" y2="17.1"></line><line x1="17.1" y1="0.9" x2="0.9" y2="17.1"></line></g></svg></sc-if>
+            <sc-if value="{{ closed2 }}" hint-placeholder-val="{{ true }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="9" y1="0.9" x2="9" y2="17.1"></line><line x1="0.9" y1="9" x2="17.1" y2="9"></line></g></svg></sc-if>
+          </span>
+          <span style="font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;">How many pads come in one container?</span>
+        </button>
+        <sc-if value="{{ open2 }}" hint-placeholder-val="{{ false }}">
+          <p id="cx-m2" style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Sixty pads per turntable case — roughly two months of use at two to three times a week. The case is built to be kept: swap in a refill insert and reuse the lid and the tweezers.</p>
+        </sc-if>
+      </div>
+
+      <div style="border-radius:10px;background:#FFFFFF;padding:16px;display:flex;flex-direction:column;gap:8px;">
+        <button type="button" onClick="{{ toggle3 }}" aria-expanded="{{ open3 }}" aria-controls="cx-m3" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
+          <span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:41.702px;height:41.702px;border-radius:20.851px;background:#F9E6E8;">
+            <sc-if value="{{ open3 }}" hint-placeholder-val="{{ false }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="0.9" y1="0.9" x2="17.1" y2="17.1"></line><line x1="17.1" y1="0.9" x2="0.9" y2="17.1"></line></g></svg></sc-if>
+            <sc-if value="{{ closed3 }}" hint-placeholder-val="{{ true }}"><svg width="14.518" height="14.518" viewBox="0 0 18 18" aria-hidden="true"><g stroke="#1A1919" stroke-width="1.7" stroke-linecap="round"><line x1="9" y1="0.9" x2="9" y2="17.1"></line><line x1="0.9" y1="9" x2="17.1" y2="9"></line></g></svg></sc-if>
+          </span>
+          <span style="font-family:Inter,sans-serif;font-weight:600;font-size:20px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;text-align:left;">How often should I use it?</span>
+        </button>
+        <sc-if value="{{ open3 }}" hint-placeholder-val="{{ false }}">
+          <p id="cx-m3" style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Two to three evenings a week, on clean dry skin. Follow with moisturiser, and wear SPF the next morning — freshly resurfaced skin burns faster.</p>
+        </sc-if>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="margin:96px 16px 0;display:flex;flex-direction:column;gap:24px;align-items:flex-start;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <h2 style="margin:0;font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:36px;line-height:1.2;letter-spacing:-0.03em;color:#1A1919;">Press play now</h2>
+      <p style="margin:0;font-family:Inter,sans-serif;font-weight:400;font-size:16px;line-height:1.4;letter-spacing:-0.008em;color:rgba(26,25,25,0.72);">Don't miss out on the ultimate body glow. Secure your limited edition remix and turn up the volume.</p>
+    </div>
+    <a href="https://kamilacomme.github.io/" aria-label="Shop the drop" style="display:flex;flex-direction:row;align-items:center;height:45.72px;text-decoration:none;">
+      <span style="display:flex;align-items:center;justify-content:center;height:45.72px;padding:11.86px 17.79px;border-radius:118.6px;background:#1A1919;font-family:Inter,sans-serif;font-weight:500;font-size:16px;line-height:1.4;letter-spacing:-1.186px;color:#FFFFFF;text-transform:uppercase;white-space:nowrap;">Shop the drop</span>
+      <span role="button" tabIndex="0" aria-label="Play preview" onClick="{{ tap2 }}" onKeyDown="{{ tapKey2 }}" style="display:flex;align-items:center;justify-content:center;width:45.72px;height:45.72px;margin-left:-5.93px;border-radius:105.18px;background:#1A1919;">
+        <sc-if value="{{ hoverBtn2 }}" hint-placeholder-val="{{ false }}"><svg width="18.99" height="22.246" viewBox="0 0 18.99 22.246" aria-hidden="true"><g fill="#FFFFFF"><rect x="2.2" y="1.6" width="5.6" height="19" rx="2.2"></rect><rect x="11.2" y="1.6" width="5.6" height="19" rx="2.2"></rect></g></svg></sc-if><sc-if value="{{ idleBtn2 }}" hint-placeholder-val="{{ true }}"><svg width="18.99" height="22.246" viewBox="0 0 18.990 22.246" fill="none" aria-hidden="true" style="transform:translateX(2.5px);"><path d="M 0 18.148 L 0 4.157 C 0 2.323 1.997 1.186 3.574 2.123 L 15.518 9.219 C 17.072 10.142 17.058 12.397 15.492 13.301 L 3.549 20.197 C 1.971 21.108 0 19.969 0 18.148 Z" fill="#FFFFFF"></path></svg></sc-if>
+      </span>
+    </a>
+  </section>
+
+  <div aria-hidden="true" style="position:relative;margin-top:35.5px;height:290px;overflow:hidden;">
+    <div style="position:absolute;left:0;top:63.77px;width:100%;overflow:hidden;">
+      <div class="cx-mq">
+        <span style="font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:249.655px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Pink Vinyl Edition</span>
+        <span style="font-family:'Libre Caslon Condensed','Playfair',ui-serif,Georgia,serif;font-variation-settings:'wdth' 88,'opsz' 72;font-weight:600;font-size:249.655px;line-height:1.1;letter-spacing:-0.03em;color:#1A1919;white-space:nowrap;">Pink Vinyl Edition</span>
+      </div>
+    </div>
+    <div style="position:absolute;left:40.412px;top:0;width:345.278px;height:310.376px;overflow:hidden;z-index:3;">
+      <div style="position:absolute;left:0;top:0;width:252.49px;height:265.721px;transform:translate(0,45.257px) rotate(-3.84deg);transform-origin:0 0;background:url(./assets/celimax/0f7b73ef16fbe8fc-sm.webp) 50% 0% / 112.676% 114.047% no-repeat;"></div>
+      <div style="position:absolute;left:151.895px;top:0;width:193.384px;height:294.785px;background:url(./assets/celimax/58f582cc070cd500.webp) 49.962% 0% / 100.002% 163.508% no-repeat;"></div>
+    </div>
+  </div>
+
+  </main>
+</div>
+</sc-if>
+</div>
+</div>
+
+<template id="__bundler_thumbnail" data-bg-color="#F9E6E8">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#F9E6E8"></rect>
+    <circle cx="600" cy="400" r="200" fill="#1A1919"></circle>
+    <circle cx="600" cy="400" r="34" fill="#F9E6E8"></circle>
+    <text x="600" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="84" fill="#1A1919">celimax</text>
+  </svg>
+</template>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;viewWidth&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;auto&quot;,&quot;1194&quot;,&quot;1024&quot;,&quot;834&quot;,&quot;768&quot;,&quot;430&quot;,&quot;393&quot;],&quot;default&quot;:&quot;auto&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;showGrid&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;motionLevel&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;full&quot;,&quot;minimal&quot;],&quot;default&quot;:&quot;full&quot;,&quot;tsType&quot;:&quot;\&quot;full\&quot; | \&quot;minimal\&quot;&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;parallax&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;openFaq&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:0,&quot;min&quot;:-1,&quot;max&quot;:3,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = {
+    open: 0,
+    hover: [false, false, false],
+    // a real phone gets the 393 layout from the first paint; the Tweaks width can override it later.
+    // screen.width (not window.innerWidth, which is corrupted by our own static width=1440 meta tag until
+    // fit() rewrites it — and not pointer:coarse, which misreports inside in-app webviews like Slack's)
+    mobile: (function () {
+      try { return Math.min(window.screen.width, window.screen.height) < 600; } catch (e) { return false; }
+    })()
+  };
+
+  initHeroZoom(reduced) {
+    const hero = document.querySelector('header');
+    const img = document.querySelector('[data-hero-zoom]');
+    if (!hero || !img || reduced) return;
+    // the photo drifts against the cursor — small enough that the 6% overscale never exposes an edge
+    const AMP = 13;
+    let raf = null;
+    let tx = 0, ty = 0, cx = 0, cy = 0;
+    img.style.transition = 'none';
+    const tick = () => {
+      cx += (tx - cx) * 0.07;
+      cy += (ty - cy) * 0.07;
+      img.style.transform = 'scale(1.06) translate3d(' + cx.toFixed(2) + 'px,' + cy.toFixed(2) + 'px,0)';
+      if (Math.abs(tx - cx) > 0.05 || Math.abs(ty - cy) > 0.05) {
+        raf = requestAnimationFrame(tick);
+      } else {
+        raf = null;
+      }
+    };
+    const start = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    const enter = (e) => {
+      const r = hero.getBoundingClientRect();
+      tx = -(((e.clientX - r.left) / r.width) - 0.5) * 2 * AMP;
+      ty = -(((e.clientY - r.top) / r.height) - 0.5) * 2 * AMP;
+      start();
+    };
+    const leave = () => { tx = 0; ty = 0; start(); };
+    hero.addEventListener('mousemove', enter);
+    hero.addEventListener('mouseleave', leave);
+    this._heroEnter = enter;
+    this._heroLeave = leave;
+    this._hero = hero;
+  }
+
+  initLineReveal(reduced) {
+    const h = document.querySelector('[data-line-reveal]');
+    if (!h) return;
+    if (!h.dataset.wrapped) {
+      const out = document.createDocumentFragment();
+      Array.from(h.childNodes).forEach((n) => {
+        if (n.nodeType === 3) {
+          n.textContent.split(/(\s+)/).forEach((t) => {
+            if (!t) return;
+            if (!t.trim()) { out.appendChild(document.createTextNode(t)); return; }
+            const sp = document.createElement('span');
+            sp.setAttribute('data-w', '');
+            sp.style.transition = 'opacity .35s linear';
+            sp.textContent = t;
+            out.appendChild(sp);
+          });
+        } else {
+          const sp = document.createElement('span');
+          sp.setAttribute('data-w', '');
+          sp.style.transition = 'opacity .35s linear';
+          sp.appendChild(n);
+          out.appendChild(sp);
+        }
+      });
+      h.textContent = '';
+      h.appendChild(out);
+      h.dataset.wrapped = '1';
+    }
+    const words = Array.from(h.querySelectorAll('[data-w]'));
+    const byLine = new Map();
+    words.forEach((w) => {
+      const key = Math.round(w.offsetTop / 8) * 8;
+      if (!byLine.has(key)) byLine.set(key, []);
+      byLine.get(key).push(w);
+    });
+    this._lines = Array.from(byLine.entries()).sort((a, b) => a[0] - b[0]).map(([top, els]) => ({ top, els }));
+    this._lineHost = h;
+    const firstTop = this._lines.length ? this._lines[0].top : 0;
+    const always = new Set();
+    words.forEach((w) => {
+      if (Math.round(w.offsetTop / 8) * 8 === firstTop) always.add(w);
+    });
+    this._lines = this._lines
+      .map((l) => ({ top: l.top, els: l.els.filter((e) => !always.has(e)) }))
+      .filter((l) => l.els.length);
+    always.forEach((w) => { w.style.opacity = '1'; });
+    if (reduced) { words.forEach((w) => { w.style.opacity = '1'; }); this._lines = null; return; }
+    this._lines.forEach((l) => l.els.forEach((e) => {
+      if (e.querySelector('[data-float]')) { e.style.transition = 'color .35s linear'; e.style.color = 'rgba(26,25,25,0.2)'; }
+      else e.style.opacity = '0.2';
+    }));
+    this.paintLines();
+  }
+
+  paintLines() {
+    if (!this._lines) return;
+    const r = this._lineHost.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const start = vh * 0.82;
+    const end = vh * 0.34;
+    this._lines.forEach((line) => {
+      const y = r.top + line.top;
+      let p = (start - y) / (start - end);
+      p = p < 0 ? 0 : p > 1 ? 1 : p;
+      const o = (0.2 + 0.8 * p).toFixed(3);
+      line.els.forEach((el) => {
+        // words carrying a floating object dim their text only — the object stays fully opaque
+        if (el.querySelector('[data-float]')) { el.style.opacity = '1'; el.style.color = 'rgba(26,25,25,' + o + ')'; }
+        else el.style.opacity = o;
+      });
+    });
+  }
+
+  // tablet = the 1440 canvas scaled uniformly; phone = the 393 canvas scaled the same way
+  fit() {
+    const holder = document.querySelector('[data-cx-holder]');
+    const canvas = document.querySelector('[data-cx-canvas]');
+    if (!holder || !canvas) return;
+    const mode = this.props.viewWidth ?? 'auto';
+    const narrow = (function () {
+      try { return Math.min(window.screen.width, window.screen.height) < 600; } catch (e) { return false; }
+    })();
+    // on a genuinely narrow real device the Tweaks width is a stale authoring default, not a simulation
+    // request — ignore it so the canvas stays fluid to the device's real width instead of a fixed 393/430px column
+    const forced = (mode === 'auto' || narrow) ? null : parseInt(mode, 10);
+    const mobile = forced !== null ? forced < 600 : narrow;
+    const meta = document.querySelector('meta[name="viewport"]');
+    if (meta) {
+      const want = mobile ? 'width=device-width, initial-scale=1' : 'width=1440';
+      if (meta.getAttribute('content') !== want) meta.setAttribute('content', want);
+    }
+    if (this.state.mobile !== mobile) { this.setState({ mobile }); return; }
+    const avail = forced !== null ? forced : document.documentElement.clientWidth;
+    const base = mobile ? avail : 1440;
+    // phone stays unscaled and fluid — a transform on the canvas would break position:sticky
+    const s = mobile ? 1 : Math.min(1, avail / base);
+    canvas.style.width = mobile ? '100%' : base + 'px';
+    canvas.style.padding = mobile ? '0' : '16px 50px 0';
+    canvas.style.transform = s !== 1 ? 'scale(' + s + ')' : 'none';
+    canvas.style.margin = s !== 1 ? '0' : '0 auto';
+    holder.style.width = forced !== null ? Math.round(base * s) + 'px' : '100%';
+    holder.style.margin = '0 auto';
+    holder.style.height = Math.round(canvas.offsetHeight * s) + 'px';
+    document.documentElement.style.setProperty('--cx-vw', Math.round(avail / s) + 'px');
+    this._scale = s;
+  }
+
+  // cards inside a [data-stagger] group come in one after another
+  stagger() {
+    document.querySelectorAll('[data-stagger]').forEach((wrap) => {
+      Array.from(wrap.children).forEach((c, i) => {
+        if (c.hasAttribute('data-reveal')) {
+          c.dataset.delay = String(i * 110);
+          c.style.transitionDelay = (i * 110) + 'ms';
+        }
+      });
+    });
+  }
+
+  componentDidUpdate() {
+    this.fit();
+    this.stagger();
+    // a re-render creates fresh nodes the observer never saw — pick them back up
+    if (this._io) document.querySelectorAll('[data-reveal]:not([data-in])').forEach((el) => this._io.observe(el));
+    // a re-render replaces the heading's children, wiping the per-word spans — rebuild them
+    const h = document.querySelector('[data-line-reveal]');
+    if (h && !h.dataset.wrapped) {
+      this._lines = null;
+      this.initLineReveal(matchMedia('(prefers-reduced-motion: reduce)').matches);
+    }
+  }
+
+  componentDidMount() {
+    const root = this.el || document;
+    this.fit();
+    const onFit = () => this.fit();
+    window.addEventListener('resize', onFit);
+    window.addEventListener('load', onFit);
+    this._onFit = onFit;
+    const canvas = document.querySelector('[data-cx-canvas]');
+    if (canvas && window.ResizeObserver) {
+      this._ro = new ResizeObserver(() => this.fit());
+      this._ro.observe(canvas);
+    }
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const level = this.props.motionLevel ?? 'full';
+
+    if (!reduced) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.setAttribute('data-in', ''); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
+      this.stagger();
+      document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+        el.style.transitionDelay = (el.dataset.delay !== undefined
+          ? parseInt(el.dataset.delay, 10)
+          : Math.min(i % 4, 3) * 70) + 'ms';
+        io.observe(el);
+      });
+      this._io = io;
+    } else {
+      document.querySelectorAll('[data-reveal]').forEach((el) => el.setAttribute('data-in', ''));
+    }
+
+    const parallax = (this.props.parallax ?? true) && !reduced && level === 'full';
+    if (parallax) {
+      const nodes = Array.from(document.querySelectorAll('[data-parallax]')).map((el) => ({
+        el, speed: parseFloat(el.getAttribute('data-parallax')) || 0,
+        base: el.style.transform || ''
+      }));
+      let raf = null;
+      const apply = () => {
+        raf = null;
+        const vh = window.innerHeight;
+        nodes.forEach(({ el, speed, base }) => {
+          const r = el.getBoundingClientRect();
+          const progress = (r.top + r.height / 2 - vh / 2) / vh;
+          el.style.transform = base + ' translate3d(0,' + (progress * speed * 240).toFixed(2) + 'px,0)';
+        });
+      };
+      const onScroll = () => { if (!raf) raf = requestAnimationFrame(apply); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      this._onScroll = onScroll;
+      apply();
+    }
+
+    this.initHeroZoom(reduced || level !== 'full');
+    this.initLineReveal(reduced);
+    const onScrollLines = () => this.paintLines();
+    window.addEventListener('scroll', onScrollLines, { passive: true });
+    window.addEventListener('resize', onScrollLines);
+    this._onScrollLines = onScrollLines;
+
+    const initial = this.props.openFaq;
+    if (typeof initial === 'number' && initial !== 0) this.setState({ open: initial });
+    void root;
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._ro) this._ro.disconnect();
+    if (this._onFit) {
+      window.removeEventListener('resize', this._onFit);
+      window.removeEventListener('load', this._onFit);
+    }
+    if (this._onScrollLines) {
+      window.removeEventListener('scroll', this._onScrollLines);
+      window.removeEventListener('resize', this._onScrollLines);
+    }
+    if (this._hero && this._heroEnter) {
+      this._hero.removeEventListener('mousemove', this._heroEnter);
+      this._hero.removeEventListener('mouseleave', this._heroLeave);
+    }
+    if (this._onScroll) {
+      window.removeEventListener('scroll', this._onScroll);
+      window.removeEventListener('resize', this._onScroll);
+    }
+  }
+
+  setHover(i, on) {
+    this.setState((s) => {
+      const hover = s.hover.slice();
+      hover[i] = on;
+      return { hover };
+    });
+  }
+
+  toggle(i) {
+    this.setState((s) => ({ open: s.open === i ? -1 : i }));
+  }
+
+  renderVals() {
+    const open = this.state.open;
+    const h = this.state.hover;
+    const tap = (i) => (e) => {
+      if (e && e.preventDefault) { e.preventDefault(); e.stopPropagation(); }
+      this.setHover(i, !this.state.hover[i]);
+    };
+    const vals = {
+      showGrid: this.props.showGrid ?? false,
+      isMobile: !!this.state.mobile,
+      isDesktop: !this.state.mobile,
+      tap0: tap(0), tap1: tap(1), tap2: tap(2),
+      tapKey0: (e) => { if (e.key === 'Enter' || e.key === ' ') tap(0)(e); },
+      tapKey1: (e) => { if (e.key === 'Enter' || e.key === ' ') tap(1)(e); },
+      tapKey2: (e) => { if (e.key === 'Enter' || e.key === ' ') tap(2)(e); },
+      hoverBtn0: h[0], idleBtn0: !h[0],
+      hoverBtn1: h[1], idleBtn1: !h[1],
+      hoverBtn2: h[2], idleBtn2: !h[2],
+      btnIn0: () => this.setHover(0, true), btnOut0: () => this.setHover(0, false),
+      btnIn1: () => this.setHover(1, true), btnOut1: () => this.setHover(1, false),
+      btnIn2: () => this.setHover(2, true), btnOut2: () => this.setHover(2, false),
+      toggle0: () => this.toggle(0),
+      toggle1: () => this.toggle(1),
+      toggle2: () => this.toggle(2),
+      toggle3: () => this.toggle(3)
+    };
+    for (let i = 0; i < 4; i++) {
+      vals['open' + i] = open === i;
+      vals['closed' + i] = open !== i;
+    }
+    return vals;
+  }
+}
+</script>
+</body>
+</html>
